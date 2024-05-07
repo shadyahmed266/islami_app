@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami_app1/providers/app_config_provider.dart';
@@ -10,7 +9,7 @@ import '../my_theme.dart';
 class SuraDetailsScreen extends StatefulWidget {
   static const String routeName = 'sura_details_screen';
 
-  SuraDetailsScreen({super.key});
+  const SuraDetailsScreen({super.key});
 
   @override
   State<SuraDetailsScreen> createState() => _SuraDetailsScreenState();
@@ -49,7 +48,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
             ),
           ),
           body: verses.isEmpty
-              ? Center(child: CircularProgressIndicator())
+              ? const Center(child: CircularProgressIndicator())
               : Container(
                   margin: EdgeInsets.symmetric(
                       horizontal: MediaQuery.of(context).size.width * 0.06,

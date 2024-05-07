@@ -5,7 +5,7 @@ class ItemSuraDetails extends StatelessWidget {
   String name;
   int index ;
 
-  ItemSuraDetails({required this.name,required this.index});
+  ItemSuraDetails({super.key, required this.name,required this.index});
 
   @override
   Widget build(BuildContext context) {

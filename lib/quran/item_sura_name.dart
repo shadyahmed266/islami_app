@@ -5,7 +5,7 @@ class ItemSuraName extends StatelessWidget {
   String name;
   int index ;
 
-  ItemSuraName({required this.name,required this.index});
+  ItemSuraName({super.key, required this.name,required this.index});
 
   @override
   Widget build(BuildContext context) {
